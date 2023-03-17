@@ -94,7 +94,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/inspecta/budget-app.git
+  git clone https://github.com/Nejjari001/budget-app
 ```
 
 ### Install
@@ -140,11 +140,11 @@ You can deploy this project using [render](https://render.com)
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **NEJJARI ABDELHAFID**
 
-- GitHub: [@inspecta](https://github.com/inspecta)
-- Twitter: [@djmulinde](https://twitter.com/djmulinde)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/mulinde-derrick)
+- GitHub: [ @Nejjari001](https://github.com/Nejjari001)
+- Twitter: [@AbdoNJ19](https://https//twitter.com/AbdoNJ19)
+- LinkedIn: [Abdelhafid Nejjari](https://www.linkedin.com/in/abdelhafid-nejjari)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
