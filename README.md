@@ -201,7 +201,7 @@ I would also like to give a special shout out to [Gregoire Vella on Behance](htt
 
 - **Are contributions welcome?**
 
-  - Yes please. Contact me at `djmulinde@gmail.com` and I will be happy to add you as a contributor.
+  - Yes please. Contact me at `mr.nejjari.abdelhafid@gmail.com` and I will be happy to add you as a contributor.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
