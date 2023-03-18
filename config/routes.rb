@@ -1,13 +1,19 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  devise_for :users, controllers: { registrations: "users/registrations" }
-  
-  root to: "home#index"
-  resources :users, only: [:index, :show, :new] do
-    resources :groups, only: [:new, :create, :show, :index, :destroy]
-    resources :entities, only: [:new, :create, :index, :show, :destroy]
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+
+  authenticated do
+    root to: 'categories#index', as: :authenticated_user
   end
 
-  # Logout
-  get 'logout', to: 'sessions#destroy', as: 'logout'
+  root to: 'splash#index', as: :unauthenticated_user
 
+  resources :categories, only: %i[index show new create] do
+    resources :expenses, only: [:index]
+  end
+  resources :expenses, only: %i[new create]
 end

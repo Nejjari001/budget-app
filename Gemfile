@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -27,9 +29,6 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-# Authentication
-gem 'devise'
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -48,17 +47,11 @@ gem 'bootsnap', require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
-# Upload image files
-gem 'shrine'
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-gem 'image_processing'
-
-gem 'mini_magick'
+# gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  gem 'capybara'
-  gem 'database_cleaner'
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
 end
@@ -76,6 +69,29 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
 end
+
+# Dotenv gem
+gem 'dotenv-rails'
+
+# Add bootstrap
+gem 'bootstrap', '~> 5.2'
+
+# Bootstrap ror form
+gem 'bootstrap_form', '~> 5.1'
+
+# Add devise
+gem 'devise'
+
+# Add cancancan
+gem 'cancancan'
+
+gem 'factory_bot_rails'
+
+gem 'font-awesome-rails'
+
+gem 'rails-controller-testing'
